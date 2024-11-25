@@ -1,0 +1,197 @@
+.Main_Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the entire content */
+.Contentone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: rgba(36, 36, 36, 0.5); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.084); 
+    border-radius: 16px; 
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  
+  /* Frosted Glass Heading */
+  .glass-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form styling */
+  .Search_Feild {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  /* Input styling */
+  .Search_Feild input {
+    display: flex;
+    width: 70rem;
+  }
+  
+  /* Button styling */
+  .Search_Feild button {
+    align-self: center;
+    padding: 0.5rem 2rem;
+    background-color: #646cff;
+    color: #fff;
+    border-radius: 8px;
+    text-transform: none;
+    font-size: 1rem;
+  }
+  
+  .Search_Feild button:hover {
+    background-color: #535bf2;
+  }
+
+/* Overall Weather Container */
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Container for the Cards */
+.cards-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Glass Card Styling */
+.glass-card {
+  flex: 1 1 45%; 
+  min-width: 300px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(36, 36, 36, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Weather Details Card */
+.weather-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Weather Graph Card */
+.weather-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column; 
+  }
+  .glass-card {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Weather Graph Canvas */
+.weather-graph canvas {
+  width: 100% !important; 
+  height: auto !important; 
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+/* Weather Graph */
+.weather-graph {
+  padding: 1rem;
+  max-height: 400px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .Contentone {
+      padding: 1rem;
+      width: 90%; 
+  }
+
+  .glass-heading {
+      font-size: 2rem; 
+  }
+
+  .Search_Feild {
+      gap: 0.3rem;
+  }
+
+  .Search_Feild input {
+      width: 100%; 
+  }
+
+  .Search_Feild button {
+      font-size: 0.9rem;
+      padding: 0.4rem 1rem;
+  }
+
+  .cards-container {
+      flex-direction: column; 
+  }
+
+  .glass-card {
+      flex: 1 1 100%; 
+      margin-bottom: 1rem;
+  }
+
+  .weather-graph {
+      padding: 0.5rem;
+      max-height: 300px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-heading {
+      font-size: 1.8rem; 
+  }
+
+  .Search_Feild input {
+      font-size: 0.9rem; 
+      padding: 0.4rem;
+  }
+
+  .Search_Feild button {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+  }
+
+  .glass-card {
+      padding: 1rem;
+  }
+}
