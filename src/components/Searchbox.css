@@ -109,6 +109,21 @@
   text-align: center;
 }
 
+@media (max-width: 1400px){
+  .Search_Feild input {
+    display: flex;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .Search_Feild input {
+    display: flex;
+    width: 40rem;
+  }
+}
+
+
 @media (max-width: 768px) {
   .cards-container {
       flex-direction: column; 
@@ -184,6 +199,10 @@
   .Search_Feild input {
       font-size: 0.9rem; 
       padding: 0.4rem;
+  }
+
+  #filled-basic-label {
+    display: none;
   }
 
   .Search_Feild button {
