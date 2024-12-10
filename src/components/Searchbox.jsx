@@ -19,7 +19,7 @@ function Searchbox() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     //Api Url and Key
-    const geoApi = "http://api.openweathermap.org/geo/1.0/direct?"
+    const geoApi = "https://api.openweathermap.org/geo/1.0/direct?"
     const apiKey = "97111c194e3316cbe2445e2f26441b23";
 
     //Data Fetching Function from APIs:
